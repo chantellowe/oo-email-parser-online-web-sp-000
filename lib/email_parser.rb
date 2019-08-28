@@ -13,8 +13,8 @@ class EmailAddressParser
   def parse
     if email_addresses.include?(",")
       email_addresses.split(", ")
-      parse
-    elsif email_addresses.include?(" ")
+    end
+    if email_addresses.include?(" ")
       email_addresses.split(" ")
     end
   end
