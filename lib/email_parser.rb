@@ -14,7 +14,7 @@ class EmailAddressParser
     @email_addresses = @email_addresses.split.collect do |email|
       email.gsub(/[\s,]/ ," ").split
     end
-    @email_addresses.uniq
+    @email_addresses.flatten.uniq
   end
   
 end
