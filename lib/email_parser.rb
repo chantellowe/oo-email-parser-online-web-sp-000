@@ -16,9 +16,6 @@ class EmailAddressParser
     elsif email_addresses.include?(" ")
       email_addresses.split(" ")
     end
-    if email_addresses.include?(" ")
-      email_addresses.split(" ")
-    end
   end
   
 end
